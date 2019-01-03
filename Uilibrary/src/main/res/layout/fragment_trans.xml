@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/x70"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.xzkydz.function.report.QueryReportActivity">
+
+    <ImageView
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img_pc_and_phone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/wifi_state_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/bg_wifi_normal" />
+
+        <TextView
+            android:id="@+id/wifi_state"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10px"
+            android:layout_marginTop="@dimen/x10"
+            android:singleLine="true"
+            android:textColor="#0e142b"
+            android:text="@string/wifi_state" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/instruction_pre"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction_pre"
+            android:textSize="18sp"
+            android:textColor="#0e142b"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/instruction_pre_inf"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/instruction_pre_inf"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/instruction"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="#0e142b"
+            android:text="@string/instruction" />
+
+        <TextView
+            android:id="@+id/ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@color/lib_white"
+            android:padding="5dp"
+            android:gravity="center"
+            android:minWidth="150px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:textColor="@color/lib_black_reduce"
+            android:singleLine="true"
+            android:textSize="32px"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/start_stop_button"
+            android:layout_width="290px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:text="连 接"
+            android:textColor="@drawable/selector_checkbox_text_wifi_start"
+            android:button="@null"
+            android:background="@drawable/selector_checkbox_bg_wifi_start"
+            android:gravity="center">
+        </CheckBox>
+
+    </LinearLayout>
+
+</LinearLayout>

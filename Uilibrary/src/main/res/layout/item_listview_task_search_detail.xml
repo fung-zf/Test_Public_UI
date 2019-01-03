@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:divider="@drawable/divider_linearlayout_search"
+    android:showDividers="middle"
+    >
+
+    <TextView
+        android:id="@+id/tv_detail_function"
+        style="@style/MyTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black_reduce"
+        />
+
+    <TextView
+        android:id="@+id/tv_detail_number"
+        style="@style/MyTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black_reduce"
+        />
+
+    <TextView
+        android:id="@+id/tv_detail_people"
+        style="@style/MyTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black_reduce"
+        />
+
+    <TextView
+        android:id="@+id/tv_detail_statue"
+        style="@style/MyTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black_reduce"
+        />
+
+    <TextView
+        android:id="@+id/tv_detail_time"
+        style="@style/MyTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black_reduce"
+        />
+
+
+</LinearLayout>

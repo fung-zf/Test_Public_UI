@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical"
+    tools:context="com.xzkydz.function.main.NavigationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x90"
+        >
+
+        <Button
+            android:id="@+id/btn_cs"
+            style="@style/Button_NavigationActivity"
+            android:background="@drawable/selector_navi_cs"
+            />
+
+        <Button
+            android:id="@+id/btn_sjgl"
+            style="@style/Button_NavigationActivity"
+            android:background="@drawable/selector_navi_shjgl"
+            android:layout_marginLeft="@dimen/x35"
+            />
+
+        <Button
+            android:id="@+id/btn_csbg"
+            style="@style/Button_NavigationActivity"
+            android:background="@drawable/selector_navi_bgchx"
+            android:layout_marginLeft="@dimen/x35"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x35"
+        >
+
+        <Button
+            android:id="@+id/btn_cgq"
+            style="@style/Button_NavigationActivity"
+            android:background="@drawable/selector_navi_cshbzh"/>
+
+        <Button
+            android:id="@+id/btn_csbz"
+            style="@style/Button_NavigationActivity"
+            android:background="@drawable/selector_navi_chgq"
+            android:layout_marginLeft="@dimen/x35"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x35"
+        >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Button_NavigationActivity"
+            android:background="@drawable/selector_navi_tc"
+            />
+
+    </LinearLayout>
+
+
+    <!---->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:src="@drawable/home_pic_logo" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xzkydz.function.motor.view.MotorSelectorActivity"
+    tools:showIn="@layout/activity_motor_selector">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_djxh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:layout_marginTop="@dimen/spacing_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_djxh"
+                    style="@style/MotorParNameTextView"
+                    android:text="@string/motor_djxh"
+                    />
+
+                <EditText
+                    android:id="@+id/et_djxh"
+                    style="@style/MotorParContentEdittext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    />
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:layout_marginTop="@dimen/spacing_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_edgl"
+                    style="@style/MotorParNameTextView"
+                    android:text="@string/motor_edgl"
+                    />
+                <EditText
+                    android:id="@+id/et_edgl"
+                    style="@style/MotorParContentEdittext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    />
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text=" kW"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_eddy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:layout_marginTop="@dimen/spacing_normal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_eddy"
+                    style="@style/MotorParNameTextView"
+                    android:text="@string/motor_eddy"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/et_divider_focused"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgp_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbn_null"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_null"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_110"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_110"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_115"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_115"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_220"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_220"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_283"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_283.5"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_380"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_380"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgp_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbn_660"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_660"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_3000"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_3000"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_3300"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_3300"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_6000"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_6000"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_6600"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_6600"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbn_10000"
+                    style="@style/MotorRadioButton"
+                    android:text="@string/eddy_10000"
+                    />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y200"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/x15"
+                android:background="@drawable/bg_motor_listview_tittle"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item1"
+                    style="@style/TextView_Motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x25"
+                    android:gravity="center"
+                    android:text="@string/djxh"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:textColor="@color/black_normal"
+                    android:textSize="18sp"
+                    android:background="@drawable/bg_motor_xh"
+                    />
+                <TextView
+                    android:id="@+id/tv_item_line"
+                    style="@style/TextView_Motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_item1"
+                    android:background="@color/black_hint" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x25"
+                    android:layout_below="@id/tv_item_line"
+                    android:divider="@drawable/bg_divider"
+                    android:orientation="horizontal"
+                    android:showDividers="middle"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/lightslategray"
+                    >
+                    <TextView
+                        android:id="@+id/tv_item2"
+                        style="@style/TextView_Motor"
+                        android:text="@string/eddy"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item3"
+                        style="@style/TextView_Motor"
+                        android:text="@string/eddl"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item4"
+                        style="@style/TextView_Motor"
+                        android:text="@string/edgl"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item5"
+                        style="@style/TextView_Motor"
+                        android:text="@string/edxl"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item6"
+                        style="@style/TextView_Motor"
+                        android:text="@string/kzdl"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item7"
+                        style="@style/TextView_Motor"
+                        android:text="@string/kzgl"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item8"
+                        style="@style/TextView_Motor"
+                        android:text="@string/edglys"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item9"
+                        style="@style/TextView_Motor"
+                        android:text="@string/js"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_item10"
+                        style="@style/TextView_Motor"
+                        android:text="@string/wgjjdl"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black_normal"
+                    android:layout_below="@id/linearlayout"
+                    />
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_line"
+                    android:fadeScrollbars="false"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:divider="@drawable/bg_divider_listview"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                >
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button_test"
+                    android:gravity="center"
+                    android:text="@string/motor_add_motor"
+                    android:textColor="@color/lib_white"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button_test"
+                    android:gravity="center"
+                    android:text="@string/motor_search"
+                    android:textColor="@color/lib_white"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button_test"
+                    android:gravity="center"
+                    android:text="@string/motor_clear"
+                    android:textColor="@color/lib_white"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_dynamo_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0000b0a"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/x20"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:gravity="center"
+                android:text="电机录入"
+                android:textColor="#ffad7a"
+                android:textSize="27sp" />
+
+
+            <TextView
+                android:id="@+id/tv_xh"
+                style="@style/TextView_New_Lib"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="120dp"
+                android:text="@string/xh" />
+
+            <EditText
+                android:id="@+id/et_xh_new"
+                style="@style/EditText_New_Lib"
+                android:layout_alignBaseline="@id/tv_xh"
+                android:inputType="text"
+                android:layout_toRightOf="@id/tv_xh"
+                android:nextFocusForward="@+id/et_djxl"
+                />
+
+            <TextView
+                android:id="@+id/tv_eddy_new"
+                style="@style/TextView_New_Lib"
+                android:layout_marginTop="10dp"
+                android:layout_alignRight="@id/tv_xh"
+                android:layout_below="@id/tv_xh"
+                android:text="@string/eddy_new" />
+
+            <EditText
+                android:id="@+id/et_eddy_new"
+                style="@style/EditText_New_Lib"
+                android:layout_alignBaseline="@id/tv_eddy_new"
+                android:layout_toRightOf="@id/tv_eddy_new"
+                android:nextFocusForward="@+id/et_eddl_new"
+
+                />
+
+            <TextView
+                style="@style/TextView_New_Lib"
+                android:layout_alignBaseline="@id/tv_eddy_new"
+                android:layout_toRightOf="@id/et_eddy_new"
+                android:text="@string/v" />
+
+            <TextView
+                android:id="@+id/tv_eddl_new"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_eddy_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_eddy_new"
+                android:text="@string/eddl_new" />
+
+            <EditText
+                android:id="@+id/et_eddl_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_eddl_new"
+                android:layout_alignBaseline="@id/tv_eddl_new"
+                android:nextFocusForward="@+id/et_edgl_new"
+                />
+
+            <TextView
+                style="@style/TextView_New_Lib"
+                android:text="@string/a"
+                android:layout_alignBaseline="@id/tv_eddl_new"
+                android:layout_toRightOf="@id/et_eddl_new"
+                />
+
+            <TextView
+                android:id="@+id/tv_edgl_new"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_eddl_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_eddl_new"
+                android:text="@string/edgl_new" />
+
+            <EditText
+                android:id="@+id/et_edgl_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_edgl_new"
+                android:layout_alignBaseline="@id/tv_edgl_new"
+                android:nextFocusForward="@+id/et_edxl_new"
+                />
+
+            <TextView
+                style="@style/TextView_New_Lib"
+                android:text="@string/kW"
+                android:layout_alignBaseline="@id/tv_edgl_new"
+                android:layout_toRightOf="@id/et_edgl_new"
+                />
+
+            <TextView
+                android:id="@+id/tv_edxl_new"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_edgl_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_edgl_new"
+                android:text="@string/edxl_new" />
+
+            <EditText
+                android:id="@+id/et_edxl_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_edxl_new"
+                android:layout_alignBaseline="@id/tv_edxl_new"
+                android:nextFocusForward="@+id/et_kzdl_new"
+                />
+
+            <TextView
+                style="@style/TextView_New_Lib"
+                android:text="@string/per"
+                android:layout_alignBaseline="@id/tv_edxl_new"
+                android:layout_toRightOf="@id/et_edxl_new"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_js"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_eddl_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_edxl_new"
+                android:text="@string/js_new" />
+
+            <EditText
+                android:id="@+id/et_js_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_js"
+                android:imeOptions="actionDone"
+                android:layout_alignBaseline="@id/tv_js" />
+
+
+            <TextView
+                android:id="@+id/tv_kzdl_new"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_edxl_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_js"
+                android:text="@string/kzdl_new" />
+
+            <EditText
+                android:id="@+id/et_kzdl_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_kzdl_new"
+                android:layout_alignBaseline="@id/tv_kzdl_new"
+                android:nextFocusForward="@+id/et_kzgl_new"
+                />
+
+            <TextView
+                style="@style/TextView_New_Lib"
+                android:text="@string/a"
+                android:layout_alignBaseline="@id/tv_kzdl_new"
+                android:layout_toRightOf="@id/et_kzdl_new"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_kzgl_new"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_kzdl_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_kzdl_new"
+                android:text="@string/kzgl_new" />
+
+            <EditText
+                android:id="@+id/et_kzgl_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_kzgl_new"
+                android:layout_alignBaseline="@id/tv_kzgl_new"
+                android:nextFocusForward="@+id/et_kzdl"
+                />
+
+            <TextView
+                style="@style/TextView_New_Lib"
+                android:text="@string/kW"
+                android:layout_alignBaseline="@id/tv_kzgl_new"
+                android:layout_toRightOf="@id/et_kzgl_new"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_edglys_new"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_kzgl_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_kzgl_new"
+                android:text="@string/edglysh_new"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et_edglys_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_edglys_new"
+                android:layout_alignBaseline="@id/tv_edglys_new"
+                android:nextFocusForward="@+id/et_kzglys_new"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_kzglys_new"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_edglys_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_edglys_new"
+                android:text="@string/kzglysh_new"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et_kzglys_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_kzglys_new"
+                android:layout_alignBaseline="@id/tv_kzglys_new"
+                android:nextFocusForward="@+id/et_wgjjdl"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_wgjjdl"
+                style="@style/TextView_New_Lib"
+                android:layout_alignRight="@id/tv_kzglys_new"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_kzglys_new"
+                android:text="@string/wgjjdl_new" />
+
+            <EditText
+                android:id="@+id/et_wgjjdl_new"
+                style="@style/EditText_New_Lib"
+                android:layout_toRightOf="@id/tv_wgjjdl"
+                android:layout_alignBaseline="@id/tv_wgjjdl"
+                android:nextFocusForward="@+id/et_js"
+                android:hint="0.8"
+                android:text="0.8"
+                />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="添加到数据库"
+                    android:background="@drawable/btn_bg_yellow"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="取消"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_yellow"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

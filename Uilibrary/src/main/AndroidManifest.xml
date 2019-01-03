@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xzkydz.function.mylibrary">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application>
+
+        <!-- <activity -->
+        <!-- android:name="com.xzkydz.function.main.NavigationActivity" -->
+        <!-- android:label="@string/title_activity_navigation" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.xzkydz.function.nav_menu.markdown.MarkDownActivity" -->
+        <!-- android:label="@string/title_activity_mark_down" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+        <activity
+            android:name="com.xzkydz.function.menu.aftersale.AfterSaleActivity"
+            android:label="@string/title_activity_after_sale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.xzkydz.function.menu.backups.BackUpsActivity"
+            android:label="@string/title_activity_back_ups"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.xzkydz.function.menu.setting.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity android:name="com.xzkydz.function.splash.SplashActivity" /> -->
+        <activity
+            android:name="com.xzkydz.function.report.QueryReportActivity"
+            android:label="@string/title_activity_query_report"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name="com.xzkydz.function.ftp.ftptwo.FTPServerService" />
+
+        <activity
+            android:name="com.xzkydz.function.search.view.SearchHistoryTaskActivity"
+            android:label="@string/title_activity_search_history_task"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.xzkydz.function.motor.view.MotorSelectorActivity"
+            android:label="@string/title_activity_motor_selector"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.xzkydz.function.pdf.PdfActivity"
+            android:label="@string/title_activity_pdf"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.xzkydz.function.pdf.PdfListActivity"
+            android:label="@string/title_activity_pdf_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.xzkydz.function.data.view.DataMagerActivity"
+            android:label="@string/title_activity_data_manager"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.xzkydz.function.menu.setting.ConfigActivity"
+            android:label="@string/title_activity_config"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

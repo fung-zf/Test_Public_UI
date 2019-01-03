@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xzkydz.function.menu.setting.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+
+    <ImageView
+        android:id="@+id/imv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/qyxx_logo"
+        />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="2.0"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/line_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@color/lib_black_hint"
+        />
+
+    <Button
+        android:id="@+id/btn_updata"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/lib_bg_ll"
+        android:text="@string/updata"
+        android:paddingLeft="@dimen/x25"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:drawableRight="@drawable/icon_arrow"
+        android:paddingRight="10dp"
+        android:textColor="@color/lib_black_normal"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <TextView
+        android:id="@+id/line_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lib_black_hint"
+        />
+
+    <Button
+        android:id="@+id/btn_net"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/lib_bg_ll"
+        android:text="@string/netSetting"
+        android:paddingLeft="@dimen/x25"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:paddingRight="10dp"
+        android:drawableRight="@drawable/icon_arrow"
+        android:textColor="@color/lib_black_normal"
+        style="?android:attr/borderlessButtonStyle"
+    />
+
+    <TextView
+        android:id="@+id/line_three"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lib_black_hint"
+        />
+
+</LinearLayout>
+
+

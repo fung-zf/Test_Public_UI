@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xzkydz.function.report.QueryReportActivity">
+
+    <TextView
+        android:id="@+id/current_path_view"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:text="测 试 报 告 列 表"
+        android:background="#1a000000"
+        android:textColor="#080b2d"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_split_line"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+
+
+        <TextView
+            android:id="@+id/tv_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#2d0b03"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

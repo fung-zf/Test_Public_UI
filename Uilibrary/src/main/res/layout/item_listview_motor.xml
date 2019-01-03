@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_item1"
+        style="@style/TextView_Motor"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x15"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black_normal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x5"
+        />
+
+    <TextView
+        android:id="@+id/tv_item0"
+        style="@style/TextView_Motor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_item1"
+        android:layout_marginEnd="@dimen/x15"
+        />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_tittle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/x30"-->
+        <!--android:gravity="center_horizontal|bottom"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_item1"-->
+            <!--style="@style/TextView_Motor"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/x15"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/black_normal"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_item0"-->
+            <!--style="@style/TextView_Motor"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/x15"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginLeft="@dimen/x10"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tv_item_line"
+        style="@style/TextView_Motor"
+        android:layout_below="@id/tv_item0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_hint"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x25"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_item_line"
+        android:divider="@drawable/bg_divider"
+        android:showDividers="middle"
+        >
+        <TextView
+            android:id="@+id/tv_item2"
+            style="@style/TextView_Motor"
+            />
+
+        <TextView
+            android:id="@+id/tv_item3"
+            style="@style/TextView_Motor"
+            />
+
+        <TextView
+            android:id="@+id/tv_item4"
+            style="@style/TextView_Motor"
+            />
+
+        <TextView
+            android:id="@+id/tv_item5"
+            style="@style/TextView_Motor"/>
+
+        <TextView
+            android:id="@+id/tv_item6"
+            style="@style/TextView_Motor"/>
+
+        <TextView
+            android:id="@+id/tv_item7"
+            style="@style/TextView_Motor"/>
+
+        <TextView
+            android:id="@+id/tv_item8"
+            style="@style/TextView_Motor"/>
+
+        <TextView
+            android:id="@+id/tv_item9"
+            style="@style/TextView_Motor"/>
+
+        <TextView
+            android:id="@+id/tv_item10"
+            style="@style/TextView_Motor"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

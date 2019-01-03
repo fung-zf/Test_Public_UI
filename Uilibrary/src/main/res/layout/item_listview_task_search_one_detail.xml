@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_linearlayout_search"
+        >
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            />
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textColor="@color/black_reduce"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/spacing_normal"
+        >
+
+        <Button
+            android:id="@+id/btn_continue_test"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:text="@string/continue_test"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            />
+
+        <Button
+            android:id="@+id/btn_resuse_pares"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/spacing_huge"
+            android:background="@drawable/selector_bg_item"
+            android:text="@string/resues_paras"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/spacing_normal"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
